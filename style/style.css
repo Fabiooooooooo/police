@@ -1,0 +1,316 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*首頁到右邊後再對齊logo*/
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  /*螢幕縮小後排版變好看*/
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background-color: aliceblue;
+  -webkit-box-shadow: #535353;
+          box-shadow: #535353;
+}
+
+header div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*文字貼齊logo*/
+  -webkit-box-flex: 5;
+      -ms-flex: 5 1 400px;
+          flex: 5 1 400px;
+  /*調整首頁的位置到右邊*/
+  margin: 2rem;
+  /*logo旁邊增加空隙*/
+}
+
+header div.logo h1 {
+  font-size: 3rem;
+}
+
+header div.logo img {
+  /*照片大小logo*/
+  width: 8vw;
+  height: 8vw;
+}
+
+header nav {
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 400px;
+          flex: 2 1 400px;
+}
+
+header nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  /*黑點消失*/
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*讓首頁中間可以隔開*/
+}
+
+header nav ul li a {
+  color: #0f68ee;
+  /*首頁等顏色*/
+  text-decoration: none;
+  font-size: 1.5rem;
+  /*字體大小*/
+}
+
+main section.backImage {
+  min-height: 80vh;
+  /*最高*/
+  width: 100%;
+  /*最寬*/
+  background-image: url(../Pictures/imgmyback.JPG);
+  /*照片位置致中對整*/
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  /*讓文字回到原位*/
+  z-index: 0;
+  /*讓文字從黑色背景跳出來*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*讓文字和按鈕到中央*/
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*讓文字和按鈕到中央*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*讓文字和按鈕到中央*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*讓按鈕跑到下方*/
+  text-align: center;
+  /*讓文字和按鈕對其中間並排整齊*/
+}
+
+main section.backImage h3 {
+  font-size: 4rem;
+  color: white;
+  margin: 4rem;
+  /*按鈕和文字的距離*/
+}
+
+main section.backImage button.start {
+  background-color: #9019df;
+  color: white;
+  padding: 0.7rem 3rem;
+  /*按鈕上下大小*/
+  font-size: 1rem;
+  border: none;
+  /*黑色外誆移除*/
+  border-radius: 1rem;
+  /*調正按鈕旁邊弧度*/
+  cursor: pointer;
+  /*箭頭移到按鈕上面會有手指*/
+}
+
+main section.backImage div.filter {
+  background-color: rgba(0, 0, 0, 0.4);
+  /*讓自己的灰色背景可以跳上來必須打下面寬度和高度不然無法顯示*/
+  width: 100%;
+  min-height: 80vh;
+  position: absolute;
+  /*讓文字回到原位*/
+  top: 0;
+  z-index: -1;
+  /*讓文字從黑色背景跳出來*/
+}
+
+main section.second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*置中*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*置中*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*置中*/
+  text-align: center;
+  /*置中*/
+}
+
+main section.second h2 {
+  font-size: 2rem;
+  margin: 2rem 0rem;
+}
+
+main section.second section.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80%;
+  min-height: 80vh;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.second section.cards div.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*置中*/
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*置中*/
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*置中*/
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /*分開圖片文字按鈕*/
+  padding: 1rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 300px;
+          flex: 1 1 300px;
+  /*圖片調回中央*/
+}
+
+main section.second section.cards div.card img {
+  margin: 1rem 0rem;
+  width: 15vw;
+  height: 15vw;
+  border-radius: 50%;
+}
+
+main section.second section.cards div.card h4 {
+  margin: 1rem 0rem;
+  font-size: 2.5rem;
+}
+
+main section.second section.cards div.card p {
+  font-size: 2rem;
+}
+
+main section.second section.cards div.card a {
+  margin: 1rem 0rem;
+  text-decoration: none;
+  padding: 1rem 1.5rem;
+  background-color: blueviolet;
+  color: white;
+  font-size: 1.25rem;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 40vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #888787;
+}
+
+footer div.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*文字貼齊logo*/
+}
+
+footer div.logo h1 {
+  font-size: 2rem;
+}
+
+footer div.logo img {
+  /*照片大小logo*/
+  width: 8vw;
+  height: 8vw;
+}
+
+footer nav {
+  width: 30%;
+}
+
+footer nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  width: 100%;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+footer nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+footer section.links a {
+  margin: 0rem 1rem;
+}
+
+footer section.links a img {
+  width: 5vw;
+  height: 5vw;
+}
+
+@media screen and (max-width: 700px) {
+  main section.second section.cards div.card img {
+    width: 50vw;
+    height: 50vw;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  /*螢幕縮小logo不太會變小*/
+  header div.logo {
+    margin-left: 0rem;
+  }
+  header div.logo img {
+    width: 20vw;
+    height: 20vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

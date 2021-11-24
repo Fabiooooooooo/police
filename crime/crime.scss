@@ -1,0 +1,56 @@
+* {
+  /*讓背景貼齊邊線*/
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; /*水平軸移動取消*/
+}
+header {
+  background-color: rgb(141, 141, 141);
+  width: 100%;
+  padding: 0.5rem;
+  h1 {
+    font-size: 5rem;
+  }
+}
+nav ul {
+  background-color: rgb(58, 66, 110);
+  display: flex;
+  padding-left: 1rem;
+  list-style-type: none; /*黑點取消*/
+}
+nav ul li {
+  padding: 1.5rem 0.75rem;
+}
+nav ul li a {
+  color: rgb(153, 149, 149);
+  text-decoration: none; /*底線刪除*/
+  font-size: 1.25rem;
+  transition: 0.2s ease;
+}
+nav ul li a :hover {
+  color: rgb(255, 255, 255);
+}
+main {
+  width: 100%;
+  display: flex;
+}
+section.left,
+section.right {
+  padding: 1.1rem;
+  h2 {
+    text-align: center;
+  }
+}
+.active {
+  color: white;
+}
+main {
+  section {
+    .textcolor {
+      color: brown;
+    }
+    .textcolors {
+      color: rgb(69, 161, 33);
+    }
+  }
+}
